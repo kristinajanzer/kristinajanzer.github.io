@@ -1,0 +1,251 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
++media-breakpoint-down(lg)
+	.section-4 .tab-content .card-group .card .btn-color
+		margin-left: 20px
+		margin-right: 20px
+	.section-7 
+		.form__check
+			width: 100%
+			float: none
+			&:last-child
+				margin: 0 auto
+	.section-7 .form__cont .form__items
+		width: 48%
+		.drop-menu 
+			font-size: 14px
+			.select
+				padding: 0
+				padding-top: 12px
+				padding-right: 4px
+	
+// ≥992px
++media-breakpoint-down(md)
+	.section-1 
+		h1
+			font-size: 60px
+			line-height: 60px
+		.btn-lg
+			font-size: 14px
+			padding: 10px 30px
+	.discount
+		bottom: -24%
+		padding: 10px 0
+		text-align: center
+		.discount__items
+			li
+				padding: 5px 0
+			.discount__numeral
+				margin-top: 0
+				font-size: 55px
+				line-height: 55px
+			.discount__text
+				font-size: 25px
+				line-height: 30px
+			ul
+				flex-direction: column
+	.section-head
+		margin-top: 260px
+	.section-2 .section-head,
+	.section-4 .section-head,
+	.section-6 .section-head
+		margin-top: 150px
+	.section-3 .section-head
+		margin-top: 50px
+	.card-group .card-items li
+		font-size: 16px
+	.section-3 .section-cont__text
+		font-size: 16px
+		line-height: 20px
+	.section-4
+		.nav-tabs
+			justify-content: center
+	.section-4 .tab-content
+		.card-group
+			margin-bottom: 0
+			> .card
+				flex: 1 0 30%
+				margin-bottom: 30px
+	.section-5 .main-form
+		margin: 0 auto
+	.section-8 
+		.section-wrap 
+			li::after
+				width: 25px
+				left: 107%
+	.section-9 
+		.contacts
+			bottom: -20%
+			padding: 15px 10px
+			.contacts__items 
+				ul 
+					flex-direction: column
+					align-items: center
+					li
+						margin: 0 10px
+						&:last-child
+							display: none
+	footer 
+		padding: 30px
+		.main-menu-footer 
+			margin-top: 80px
+			ul
+				flex-direction: column
+				justify-content: flex-end
+				.btn
+					margin-top: 20px
+		.design
+			margin-top: 20px
+
+// ≥768px
++media-breakpoint-down(sm)
+	.section-4 .tab-content .card-body
+		padding: 25px
+	.section-3
+		margin-bottom: 70px
+		.section-cont
+			margin-bottom: 20px
+		.section-wrap
+			flex-direction: column
+			li
+				margin: 0
+				margin-bottom: 50px
+		.btn-wrap
+			margin-top: 30px
+	.section-8 
+		.section-cont
+			margin-left: 20px
+			margin-right: 0
+			display: inline-block
+			margin-bottom: 0px
+		.section-cont__text
+			display: inline-block
+			width: 45%
+			text-align: left
+			line-height: 25px
+			padding-left: 20px
+		.section-wrap 
+			li
+				text-align: left
+				display: flex
+				align-items: center
+				&::after
+					width: 2px
+					left: 0
+					transform: translate(0,0)
+					height: 100%
+					top: 0
+				&:last-child:after
+					display: block
+	
+
+// ≥576px
++media-breakpoint-down(xs)
+	.navbar-toggler
+		right: 0px
+	.section-1
+		padding-top: 100px
+		h1
+			font-size: 50px
+			line-height: 50px
+		.btn-lg
+			font-size: 12px
+			padding: 10px 25px
+		p
+			font-size: 16px
+	.discount
+		left: 50%
+		transform: translateX(-50%)
+		animation-name: none
+	.section-head
+		h2
+			font-size: 35px
+			line-height: 35px
+		p
+			font-size: 16px
+	.card-group
+		margin: 0 25px
+		.card
+			padding: 30px
+	.section-2 .card-group
+		.card
+			padding: 30px
+		.card-items li
+			font-size: 16px
+		.btn-wrap
+			margin-top: 10px
+	.section-4 
+		.tab-content 
+			.card-body
+				padding: 25px 0
+			.card-group .card
+				margin-left: 0
+				margin-right: 0
+				.btn-color
+					margin-bottom: 15px
+		.nav-link
+			padding: .5rem .5rem
+	.section-5 .main-form
+		width: auto
+		padding: 70px 15px
+	.section-6
+		.works__item
+			padding: 25px
+		.works
+			padding: 0
+	.section-7
+		.form
+			padding: 30px
+			.form__wrap h4
+				font-size: 30px
+		.form__cont .form__items
+			width: 100%
+			display: block
+			.drop-menu .select
+				padding: 13px
+	.section-9 
+		.contacts
+			.contacts__items 
+				h4
+					font-size: 23px
+					line-height: 30px
+					margin-bottom: 10px
+					text-align: center
+				ul 
+					li
+						font-size: 16px
+						margin: 0
+						text-align: left
+
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
++media-breakpoint-up(sm)
+.logo 
+	img
+		width: 55px
+		height: 55px
+	.logo__name
+		margin-left: 3px
+		.logo__name-one
+			font-size: 21px
+		.logo__name-two
+			font-size: 11px
+			padding-right: 10px
+// ≤768px
++media-breakpoint-up(md)
+
+// ≤992px
++media-breakpoint-up(lg)
+	.header
+		height: 153px
+.main-menu-lg .phone
+	text-align: center
+
+// ≤1200px
++media-breakpoint-up(xl)

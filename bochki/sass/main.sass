@@ -1,0 +1,853 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	color: $text
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+	&.img-width
+		width: 100%
+
+.text-center
+	text-align: center
+.text-right
+	text-align: right
+.text-left
+	text-align: left
+
+.hidden
+	display: none !important
+
+b, strong
+	font-weight: bold
+a:hover
+	text-decoration: none
+header, section
+	position: relative
+	background-size: cover
+	background-position: center
+
+.header
+	z-index: 1
+	height: 130px
+.logo
+	margin-top: 14px
+	a
+		display: block
+	img
+		width: 79px
+		height: 79px
+		display: inline-block
+		vertical-align: middle
+	.logo__name
+		display: inline-block
+		vertical-align: middle
+		font-family: MuseoSansBlack
+		margin-left: 10px
+		.logo__name-one
+			font-size: 24px
+			text-transform: uppercase
+			display: block
+			color: #707070
+			line-height: 30px
+			span
+				color: #84D841
+		.logo__name-two
+			display: block
+			color: #fff
+			background-color: #84D841
+			border-radius: 3px
+			padding: 0 20px 0 5px
+			font-size: 16px
+	
+.phone
+	margin-top: 30px
+	line-height: 23px
+	.phone__tel
+		font-family: MuseoSansBlack
+		color: #7E7E7E
+		font-size: 21px
+		a
+			color: #7E7E7E
+			&:hover
+				color: #7E7E7E
+	.callback
+		font-family: MuseoSansMedium
+		font-size: 16px
+		color: #84D841
+		border-bottom: 1px dotted #84D841
+		cursor: pointer
+		&:hover
+			border-bottom: none
+	
+.main-menu
+	background-color: #84D841
+	border-radius: 1em
+	padding: 17px
+	margin-top: 10px
+	ul
+		list-style-type: none
+		padding: 0
+		margin: 0
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: space-around
+		flex-direction: row
+  	flex-wrap: nowrap
+		align-items: center
+	li
+		text-align: center
+		a
+			color: #fff
+			font-family: MuseoSansBlack
+			font-size: 16px
+			text-transform: uppercase
+			&:hover
+				border-bottom: 2px solid #fff
+.btn
+	border-radius: 10em
+	padding: 7px 25px
+	background-color: #fff
+	font-family: HelveticaNeueBold
+	font-size: 12px
+	color: #84D841
+	text-transform: uppercase
+	
+.section-1
+	min-height: 700px
+	margin-top: -35px
+	padding-top: 230px
+	margin-bottom: 125px
+	&:before
+		position: absolute
+		content: ''
+		height: 6px
+		width: 100%
+		top: 0
+		background-image: url(../img/header-shape.png)
+	h1
+		font-family: MuseoSansBlack
+		font-size: 70px
+		color: #fff
+		line-height: 70px
+		text-transform: uppercase
+		margin-bottom: 0
+		span
+			color: #84D841
+	p
+		font-family: MuseoSansRegular
+		font-size: 20px
+		color: #fff
+	.btn-lg
+		@extend .btn
+		font-family: MuseoSansBlack
+		font-size: 16px
+		padding: 10px 40px
+	
+	
+.navbar
+	align-items: flex-start
+	justify-content: flex-end
+	padding: 0
+	position: absolute
+	top: 70px
+	right: 15px
+.navbar-toggler
+	border: none
+	position: absolute
+	top: -50px
+	right: 15px
+.navbar-nav
+	background-color: #fff
+	padding: 20px
+.navbar-toggler-icon
+	width: 2em
+	height: 2em
+
+.main-menu-lg
+	@extend .main-menu
+	background-color: #fff
+	padding: 20px 40px
+	ul
+		display: block
+	li
+		padding: 5px
+		a
+			color: #84D841
+			&:hover
+				border-bottom: 2px solid #84D841
+	.btn-color
+		@extend .btn
+		background-color: #88d14e
+		color: #fff
+		padding: 7px 35px
+	
+	
+.discount
+	position: absolute
+	bottom: -8%
+	background-color: #88d748
+	border-radius: .5em
+	padding: 0 15px
+	z-index: 1
+	.discount__items
+		ul
+			list-style-type: none
+			padding: 0
+			margin: 0
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			justify-content: space-around
+			flex-direction: row
+			flex-wrap: nowrap
+			align-items: center
+		li
+			display: inline-block
+			color: #fff
+			margin: 0 10px
+			padding: 10px 0
+		.discount__numeral
+			font-family: MuseoSansBlack
+			font-size: 65px
+			line-height: 65px
+			margin-top: 10px
+		.discount__text
+			display: block
+			font-family: MuseoSansBold
+			font-size: 30px
+			line-height: 30px
+			span
+				display: block
+				font-family: MuseoSansBlack
+				text-transform: uppercase
+				color: #626262
+		.discount__icon
+			font-size: 100px
+			color: #a6e175
+			line-height: 100px
+		.discount__button
+			.btn
+				padding: 15px 35px
+				color: #666666
+		
+		
+.section-head
+	margin-top: 125px
+	margin-bottom: 140px
+	text-align: center
+	position: relative
+	&:before
+		position: absolute
+		content: url(../img/Logo-bw.png)
+		top: -35px
+		left: 50%
+		transform: translateX(-50%)
+	h2
+		font-family: MuseoSansBlack
+		font-size: 40px
+		line-height: 40px
+		color: #707070
+		text-transform: uppercase
+		margin-bottom: 0
+		span
+			color: #8AD64D
+	p
+		font-family: MuseoSansMedium
+		font-size: 20px
+		color: #95989A
+	
+
+.section-2 .card-group
+	.card
+		border: 1px solid #E5E5E5
+		padding: 40px
+		padding-bottom: 25px
+		border-radius: .5em
+		box-shadow: -1px 9px 28px -14px rgba(0,0,0,0.79)
+		&:last-child
+			border-top-left-radius: 0.5em
+			border-bottom-left-radius: 0.5em
+		&:first-child .card-img-top
+			border-top-right-radius: 50%
+		&:last-child .card-img-top
+			border-top-left-radius: 50%
+		&:nth-child(2)
+			transform: scale(1.10)
+		.card-img-top
+			display: block
+			width: 135px
+			height: 133px
+			max-width: 100%
+			margin: 0 auto
+			border: 2px solid #bbe798
+			padding: 10px
+			border-radius: 50%
+			background-clip: content-box
+		.card-title
+			text-transform: uppercase
+			font-family: MuseoSansBlack
+			font-size: 19px
+			color: #818181
+			text-align: center
+			margin: 15px 0
+			span
+				color: #b0e188
+	.card-items
+		ul
+			list-style-type: none
+			padding: 0
+			margin: 0
+		li
+			display: block
+			position: relative
+			padding: 15px 10px 15px 60px
+			font-family: MuseoSansMedium
+			font-size: 18px
+			color: #95989A
+			line-height: 20px
+			word-wrap: normal
+			&:before
+				position: absolute
+				content: ''
+				top: 50%
+				transform: translateY(-50%)
+				left: 0
+				background: url(../img/wall1.png)
+				width: 45px
+				height: 45px
+	
+.section-3
+	margin-top: 100px
+	margin-bottom: 125px
+	.section-wrap
+		text-align: center
+		margin-bottom: 40px
+		padding: 0
+		margin: 0
+		list-style-type: none
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		li
+			display: inline-block
+			vertical-align: top
+			margin: 10px
+			width: 100%
+			opacity: 0
+			transition: all .5s
+			transform: translateY(-25px)
+			&.on
+				opacity: 1
+				transform: translateY(0px)
+			&:hover
+				transform: translateY(-10px)
+	.section-cont
+		display: block
+		width: 135px
+		height: 135px
+		max-width: 100%
+		border: 10px solid #88d14e
+		padding: 10px
+		border-radius: 50%
+		background-clip: content-box
+		background-color: #88d14e
+		margin: 0 auto
+		margin-bottom: 30px
+		text-align: center
+		.icon
+			color: #fff
+			font-size: 55px
+	.section-cont__text
+		font-family: MuseoSansMedium
+		font-size: 20px
+		color: #939698
+		line-height: 25px
+	.btn-wrap
+		text-align: center
+		margin-top: 80px
+		.btn
+			padding: 15px 35px
+			color: #666666
+			border: 1px solid #95989A
+			transition: all .5s
+			&:hover
+				background-color: #88d14e
+				color: #fff
+	
+.section-4
+	margin-bottom: 0
+	.section-4__tabs
+		margin-bottom: 60px
+	.card
+		background-color: transparent
+	&:before
+		content: ''
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		background: url(../img/leaf-pattern.png) no-repeat top center
+		background-size: cover
+		opacity: .85
+	.nav
+		justify-content: space-around
+	.nav-tabs
+		border-bottom: none
+		justify-content: space-around
+		.nav-link
+			border-top-left-radius: 0
+			border-top-right-radius: 0
+	.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active
+		border: none
+		border-color: transparent
+	.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover
+		border-color: transparent
+	.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active
+		background-color: transparent
+		color: #95989A
+		&:after
+			position: absolute
+			content: ''
+			bottom: 0
+			left: 17px
+			background-color: #88D14E
+			width: 50px
+			height: 3px
+	.nav-item
+		font-family: MuseoSansBold
+		font-size: 20px
+		line-height: 25px
+		position: relative
+		span
+			color: #88D14E
+		a
+			color: #95989A
+	.tab-content
+		margin-bottom: 100px
+		box-shadow: 0px 17px 41px -28px rgba(0,0,0,0.75)
+		background: #fff url(../img/firewood1.png) bottom right no-repeat
+		border: 1px solid #E3E3E3
+		border-radius: 15px
+		.card-body
+			padding: 50px
+		.card-group
+			margin-bottom: 30px
+			&:last-child
+				margin-bottom: 0
+			.card
+				border-radius: 15px !important
+				text-align: center
+				box-shadow: -1px 9px 28px -14px rgba(0,0,0,.79)
+				margin: 0 15px
+				background-color: #fff
+				.btn-color
+					background-color: #88d14e
+					color: #fff
+					padding: 10px 0px
+					margin: 0px 35px
+					margin-bottom: 60px
+				.card-title
+					color: #939698
+					font-family: MuseoSansMedium
+					font-size: 16px
+					margin: 30px 0
+					.card-name-two
+						span
+							text-transform: uppercase
+					.card-name-three
+						color: #8DD553
+						font-family: MuseoSansBold
+						font-size: 20px
+						margin: 10px 0 0px
+.card
+	border: none
+
+.section-5
+	margin-bottom: 0
+	&:before
+		content: ''
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		background-color: #000
+		opacity: .29
+	.main-form
+		padding: 70px 50px
+		color: #fff
+		text-align: center
+		width: 490px
+		h4
+			font-family: MuseoSansBold
+			font-size: 40px
+			line-height: 40px
+			text-transform: uppercase
+		p
+			font-family: MuseoSansMedium
+			font-size: 20px
+		label
+			text-align: left
+			display: block
+		input
+			background-color: transparent
+			font-family: MuseoSansMedium
+			font-size: 18px
+			border: 1px solid #fff
+			border-radius: 10em
+			margin: 10px 0
+			padding: 10px 25px
+			width: 100%
+			color: #fff
+			&::placeholder
+				color: #fff
+				opacity: 1
+		.btn-color
+			@extend .btn
+			background-color: #88d14e
+			color: #fff
+			padding: 10px 35px
+			text-transform: none
+			width: 100%
+			font-size: 20px
+			font-family: MuseoSansMedium
+	
+.section-6
+	margin-bottom: 125px
+	.works__item
+		padding: 0
+		padding-right: 25px
+		padding-bottom: 25px
+	img
+		width: 100%
+		height: 270px
+		object-fit: cover
+		border-radius: 10px
+		box-shadow: -1px 9px 28px -14px rgba(0,0,0,.79)
+	.works__cont
+		position: absolute
+		top: 0
+		left: 0
+		height: 100%
+		width: 100%
+		background-color: rgba(0,0,0,.35)
+		text-align: center
+		padding-top: 70px
+		color: #fff
+		opacity: 0
+		transition: all .5s
+		border-radius: 10px
+		&:hover
+			opacity: 1
+		p
+			margin: 0
+			padding: 10px 0
+			color: #fff
+			margin-bottom: 10px
+			font-family: MuseoSansMedium
+		a
+			background-color: transparent
+			border: 2px solid #88d14e
+			padding: 2px 10px
+			color: #88d14e
+			font-size: 15px
+			text-decoration: none
+			display: inline-block
+			outline: none
+			font-family: MuseoSansMedium
+			border-radius: 10em
+	.works
+		padding-right: 0
+		position: relative
+		opacity: 0
+		transition: all .5s
+		transform: translateY(-25px)
+		&.on
+			opacity: 1
+			transform: translateY(0px)
+.hidden__works
+	background-color: #fff
+	max-width: 550px
+	margin: auto
+	position: relative
+	border-radius: 10px
+	h4,
+	p
+		padding: 20px
+		padding-bottom: 0
+	p
+		padding-top: 15px
+		font-size: 16px
+		font-family: MuseoSansMedium
+		margin-bottom: 15px
+		margin-top: 0
+	img
+		width: 100%
+		border-radius: 0
+	
+.section-7
+	.img
+		display: block
+		background-position: 85% center
+		background-size: cover
+	.container-fluid
+    padding-left: 0 !important
+    padding-right: 0 !important
+	.form
+		position: relative
+		padding: 50px
+		background-position: center center
+		background-size: cover
+		&:before
+			content: ''
+			position: absolute
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			background-color: #24582E
+			opacity: .76
+		.form__wrap
+			position: relative
+			h4
+				color: #fff
+				font-size: 40px
+				font-family: MuseoSansBlack
+				text-transform: uppercase
+				margin-bottom: 15px
+	.form__cont
+		.form__items
+			width: 47%
+			display: inline-block
+			float: left
+			&:nth-child(2)
+				float: right
+		.form__item
+			label
+				color: #fff
+				display: block
+				font-family: MuseoSansBold
+				font-size: 14px
+			select
+				background: transparent
+				height: 50px
+				padding-left: 7px
+				border-radius: 5px
+				appearance: none
+				color: #fff
+				border: none
+				&::-ms-expand
+						display: none
+			.icon
+				float: right
+	.form__items_one
+		.drop-menu
+			width: 100%
+	.form__check
+		width: 48%
+		float: left
+		margin-right: 20px
+		margin-top: 20px
+		&:last-child
+			margin-right: 0
+.custom-control
+	padding-left: 0
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::before
+	background-color: #8ad64d
+.custom-control-label
+	color: #fff
+	cursor: pointer
+	font-family: MuseoSansMedium
+	&::before
+		background-color: transparent
+		border: 1px solid #fff
+		right: 0
+		left: auto
+	&::after
+		right: 0
+		left: auto
+
+.drop-menu
+	width: 100%
+	height: 50px
+	padding-left: 10px
+	background-color: transparent
+	border-radius: 30px
+	border: 1px solid #fff
+	transition: all .5s ease
+	position: relative
+	font-size: 16px
+	font-family: MuseoSansRegular
+	color: #fff
+	display: inline-block
+	margin-bottom: 20px
+.drop-menu .select
+	cursor: pointer
+	display: block
+	padding: 10px
+.drop-menu:hover
+   box-shadow: 0 6px 30px -16px #6d6d6d
+.drop-menu:active
+   background-color: #f8f8f8
+.drop-menu.active:hover,
+.drop-menu.active
+	box-shadow: 0 6px 30px -16px #6d6d6d
+	border-radius: 5px 5px 0 0
+	background-color: #f8f8f8
+	color: #000
+.drop-menu.active .select i
+   transform: rotate(180deg)
+.drop-menu .dropeddown
+	position: absolute
+	color: #000
+	background-color: #fff
+	width: 100%
+	left: 0
+	margin-top: 1px
+	box-shadow: 0 6px 30px -16px #6d6d6d
+	border-radius: 0 1px 5px 5px
+	overflow: hidden
+	display: none
+	max-height: 200px
+	overflow-y: auto
+	z-index: 9
+.drop-menu .dropeddown li
+	padding: 10px
+	padding-left: 18px
+	transition: all .2s ease
+	cursor: pointer
+.drop-menu .dropeddown
+	padding: 0
+	list-style: none
+.drop-menu .dropeddown li:hover
+	background-color: #f8f8f8
+	color: #8ad64d
+	font-weight: bold
+
+
+.section-8
+	@extend .section-3
+	.section-wrap
+		li
+			position: relative
+			&::after
+				content: ''
+				background: #88d14e
+				width: 70px
+				height: 2px
+				position: absolute
+				top: 30%
+				left: 105%
+				right: 0
+				bottom: 0
+				transform: translate(-50%, 0)
+			&:last-child:after
+				display: none
+			&:hover
+				transform: translateY(0px)
+	
+.section-9
+	img
+		width: 100%
+		min-height: 450px
+		background-size: cover
+		background-position: center
+		object-fit: cover
+	.contacts
+		@extend .discount
+		bottom: -15%
+		padding: 25px
+		width: 70%
+		h4
+			text-transform: uppercase
+			font-family: MuseoSansBold
+			font-size: 25px
+			color: #fff
+			display: block
+		.contacts__items
+			@extend .discount__items
+			display: block
+			position: relative
+			ul
+				align-items: flex-end
+				justify-content: flex-start
+				li
+					padding: 0
+					font-family: MuseoSansMedium
+					font-size: 18px
+					margin-right: 25px
+					i
+						padding-right: 7px
+						&::before
+							margin: 0
+					a
+						color: #fff
+			.contacts__nav
+				display: inline-block
+			h4
+				margin: 0
+			.contacts__icon
+				@extend .discount__icon
+				position: absolute
+				top: 0
+				right: 0
+				i
+					padding-right: 0
+		
+footer
+	padding: 80px
+	.main-menu-footer
+		@extend .main-menu
+		background-color: transparent
+		li
+			a
+				color: #000
+				&:hover
+					border-bottom: 2px solid #000
+			.btn-color
+				background-color: #84d841
+				color: #fff
+	.design
+		font-family: HelveticaRegular
+		font-size: 16px
+		color: #707070
+		text-align: center
+		span
+			color: #FF445D
+	
+	
+	
+@import "media" // Always at the end
