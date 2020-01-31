@@ -1,0 +1,375 @@
+.join {
+    margin-top: 25px;
+    text-align: center;
+    background-color: #fff;
+    position: relative;
+}
+.join h2 {
+    text-transform: uppercase;
+    font-family: RobotoMedium;
+    font-weight: lighter;
+    font-size: 36px;
+    color: #1f628d;
+    margin-bottom: 20px;
+}
+.join .heart_small {
+    margin-bottom: 20px;
+}
+.join p {
+    color: #1f628d;
+    font-size: 18px;
+    font-family: RobotoLight;
+    letter-spacing: 1px;
+    line-height: 25px;
+    margin: 0 0 95px 0;
+}
+.block {
+    text-align: center;
+}
+.block .image {
+    margin-bottom: 30px;
+    height: 110px;
+    vertical-align: middle;
+}
+.block img {
+    max-height: 100%;
+    max-width: 100%}
+.block h3 {
+    font-family: RobotoMedium;
+    font-weight: lighter;
+    font-size: 24px;
+    color: #1f628d;
+    margin: 0;
+    padding-bottom: 10px;
+}
+.block ul {
+    list-style: none;
+    margin: 5px 0 100px;
+}
+.block li {
+    background-image: url(../img/galochka.png);
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+    text-align: left;
+    background-position: 0 8px;
+    padding: 3px 3px 3px 25px;
+}
+.block span {
+    color: #ec5c63;
+    font-family: 'RobotoMedium';
+}
+footer .footer_logo {
+    margin-top: 25px;
+}
+footer {
+    background-color: #1f628d;
+}
+.main_footer {
+    background-image: url(../img/wave1.png);
+    width: 100vw;
+    background-size: cover;
+    background-position: top center;
+    height: 54px;
+    margin-bottom: -3px;
+}
+footer .logo .heart {
+    height: 23px;
+    width: 25px;
+    margin-top: -7px;
+    margin-right: 7px;
+    display: inline-block;
+}
+footer .logo h1 {
+    color: #fff;
+    font-size: 20px;
+    display: inline-block;
+    margin: 0;
+    font-family: RobotoLight;
+    font-weight: lighter;
+    letter-spacing: 1px;
+}
+footer p {
+    font-family: RobotoLight;
+    color: #fff;
+    font-size: 14px;
+    margin: 18px 0 65px;
+}
+footer h4 {
+    font-size: 14px;
+    font-family: RobotoMedium;
+    font-weight: lighter;
+    margin-top: 29px;
+    color: #fff;
+}
+footer .links {
+    list-style: none;
+    padding: 0;
+    margin: 0 25px 0 0;
+    display: inline-block;
+    vertical-align: top;
+}
+footer .links a {
+    color: #fff;
+}
+footer .links a:hover {
+    color: #ed6269;
+}
+footer .links li {
+    background-image: url(../img/arrow1.png);
+    background-size: 5px 8px;
+    background-repeat: no-repeat;
+    text-align: left;
+    background-position: 6px 12px;
+    padding: 3px 3px 3px 20px;
+}
+footer .social {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+footer .social li {
+    display: inline-block;
+    margin-right: 20px;
+}
+footer .social li:last-child {
+    margin-right: 0;
+}
+footer .social img {
+    height: 32px;
+    width: 33px;
+}
+footer .copyright {
+    background-color: #154361;
+    min-height: 65px;
+    text-align: center;
+}
+footer .copyright h3 {
+    color: #fff;
+    font-size: 14px;
+    font-family: RobotoLight;
+    margin: 0;
+    padding: 25px 15px 15px;
+}
+
+@media only screen and (max-width:1200px) {
+    .top_text h2 {
+    font-size: 33px;
+}
+.top_text h3 {
+    font-size: 30px;
+    margin-bottom: 55px;
+}
+.interview select {
+    height: 43px;
+    font-size: 15px;
+}
+.interview .pol {
+    padding-right: 15px;
+}
+.interview .pol select {
+    width: 120px;
+}
+.interview .text {
+    font-size: 15px;
+}
+.interview .find {
+    font-size: 15px;
+    margin-top: 25px;
+}
+.block ul {
+    padding: 0;
+}
+}@media only screen and (max-width:992px) {
+    
+header {
+    height: 865px;
+}
+.top_text h2 {
+    font-size: 25px;
+}
+.top_text h3 {
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+.join {
+    margin-top: 0;
+}
+.interview select {
+    height: 43px;
+    font-size: 15px;
+}
+.interview .pol {
+    display: block;
+    width: 250px;
+    text-align: left;
+    margin: 0 auto;
+}
+.interview .age {
+    display: block;
+    width: 250px;
+    text-align: left;
+    margin: 0 auto;
+    padding-right: 15px;
+}
+.interview .pol .drop-menu,
+.interview .age .drop-menu {
+    width: 100%;
+    margin: 10px 0;
+}
+    .interview .text {
+        padding-left: 16px;
+    }
+    .interview .find {
+        font-size: 16px;
+    }
+footer .links:last-child {
+    margin-bottom: 30px;
+}
+}@media only screen and (max-width:767px) {
+    .logo h1 {
+    font-size: 35px;
+}
+.logo .heart {
+    height: 35px;
+    width: 40px;
+}
+.top_text h2 {
+    margin-top: 50px;
+}
+.interview {
+    margin-bottom: 50px;
+}
+.interview select {
+    height: 40px;
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+.interview .pol {
+    display: block;
+}
+.interview .pol select {
+    width: 125px;
+}
+.interview .age {
+    display: block;
+}
+.interview .find {
+    display: inline-block;
+}
+    .join p {
+        margin: 0 0 60px 0;
+    }
+    .block ul {
+        margin: 5px auto 50px;
+        text-align: center;
+        width: 265px;
+    }
+    .block li {
+        font-size: 15px;
+    }
+    .block h3 {
+        font-size: 22px;
+    }
+    footer .footer_logo {
+        margin-top: 0px;
+    }
+footer h4 {
+    margin: 0 0 15px;
+}
+footer .links {
+    margin-bottom: 30px;
+}
+    footer p {
+        font-size: 15px;
+        margin-bottom: 30px;
+    }
+}@media only screen and (max-width:529px) {
+    .logo h1 {
+    font-size: 25px;
+}
+.logo .heart {
+    height: 30px;
+    width: 35px;
+    margin-top: -10px;
+}
+.login .sign_up {
+    font-size: 13px;
+    margin-top: 40px;
+}
+.login .sign_up:active {
+    margin-top: 41px;
+}
+.drop-menu .select span {
+    font-size: 15px;
+}
+    .drop-menu .dropeddown li {
+        font-size: 15px;
+    }
+.join h2 {
+    font-size: 25px;
+}
+.join p {
+    font-size: 15px;
+}
+.top_text h2 {
+    margin-top: 40px;
+}
+footer .social li {
+    margin-right: 10px;
+}
+}@media only screen and (max-width:429px) {
+    .logo h1 {
+    font-size: 20px;
+}
+.logo .heart {
+    height: 27px;
+    width: 32px;
+    margin-top: -5px;
+}
+.login .sign_up {
+    font-size: 11px;
+    margin-top: 35px;
+}
+.login .sign_up:active {
+    margin-top: 36px;
+}
+.top_text h2 {
+    font-size: 22px;
+}
+.top_text h3 {
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+.interview {
+    margin-top: 20px;
+}
+.interview select {
+    height: 38px;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+.interview .pol {
+    display: block;
+}
+.interview .pol select {
+    width: 125px;
+}
+.interview .age {
+    display: block;
+}
+
+footer .social {
+    margin-top: 15px;
+    width: 70%;
+}
+footer .social li {
+    margin-bottom: 15px;
+}
+footer h3 {
+    padding-top: 13px!important;
+}
+}@media only screen and (max-width:480px) {
+    footer .links:last-child {
+    margin-top: -30px;
+}
+}
