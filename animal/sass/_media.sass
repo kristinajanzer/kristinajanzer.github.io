@@ -1,0 +1,131 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
++media-breakpoint-down(lg)
+
+// ≥992px
++media-breakpoint-down(md)
+    .menu-mobile
+        display: block !important
+    .main-nav
+        display: none
+    .sticky
+        display: block
+    .logo
+        margin-top: 1.8rem
+    .sect-text
+        margin-top: 0
+    .slid-content .slid-item
+        margin: .9rem
+        padding: 2.1rem 1.25rem
+    .sect-text__text
+        width: 100%
+    .card-info
+        width: 100%
+    .section-donat
+        .sect-img
+            margin: 0 auto
+            padding-bottom: 0
+        .sect-text
+            text-align: center
+    .footer-img
+        text-align: center
+    .main-nav__link.active,
+    #pets .wrapper-menu-mobile .main-nav__link_active
+        font-weight: bold
+        color: #f1cdb3
+        &:after
+            width: 0
+    #pets 
+        .section-list
+            margin-top: .9rem
+        .main-nav__link
+            color: #fff
+// ≥768px
++media-breakpoint-down(sm)
+    .menu-mobile .bt-menu-mobile 
+        margin-right: 10%
+    .slid-content .slid-item
+        margin: 1.9rem
+        padding: 2.1rem 2.5rem
+    .s3-items-container 
+        .s3-item-wrap
+            width: 150px
+        .s3-item
+            margin-bottom: 0
+    .slid_descr     
+        .slid-modal-img
+            display: none
+        .slid-modal-text
+            width: 100%
+    button.mfp-arrow
+        opacity: 0
+    
+// ≥576px
++media-breakpoint-down(xs)
+    .logo
+        &__name
+            font-size: 1.55rem
+        &__text
+            font-size: .55rem
+    .head.sticky 
+        .logo
+            margin-top: 1rem
+    .main-text
+        width: 100%
+    section
+        padding: 0
+        background-color: #f6f6f6
+    section:nth-child(even)
+	    background-color: #fafafa
+    .sticky
+        min-height: 95px
+    .slick-prev
+        left: 0
+        z-index: 1
+    .slick-next
+        right: 0
+        z-index: 1
+    .slick-list
+        margin: 0
+    .sect-name
+        margin-bottom: .9rem
+    .slid-content .slid-item
+        padding: 2.1rem 1.8rem
+    .section-btn
+        margin-top: 2.5rem
+        margin-bottom: 2.5rem
+    .s3-items-container .s3-item-text
+        font-size: 1rem
+    .card__numbers
+        font-size: 1.1rem
+    .s3-items-container
+        margin-bottom: 15px
+    footer 
+        padding-top: 2.5rem
+    .footer-content 
+        padding-bottom: 1.5rem
+        &__item
+            padding-bottom: .6rem
+    .slid_descr
+        padding: .6rem 1.25rem
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
++media-breakpoint-up(sm)
+    
+// ≤768px
++media-breakpoint-up(md)
+
+// ≤992px
++media-breakpoint-up(lg)
+    
+// ≤1200px
++media-breakpoint-up(xl)
+    .header
+        background-position: 60% 40%
+        min-height: 850px

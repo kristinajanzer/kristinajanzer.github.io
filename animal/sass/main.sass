@@ -1,0 +1,708 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+button, a
+	outline: none
+
+html, body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	color: $text
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+
+img
+  transition: opacity 0.3s
+//   background-image: url(data:image/gif;base64,R0lGODlhCgAIAIABAN3d3f///yH5BAEAAAEALAAAAAAKAAgAAAINjAOnyJv2oJOrVXrzKQA7)
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+	&.img-width
+		width: 100%
+
+.text-center
+	text-align: center
+
+b, strong
+	font-weight: bold
+
+ul
+	list-style-type: none
+	margin: 0
+	padding: 0
+a:hover
+	text-decoration: none
+
+.header
+	min-height: 750px
+	background-size: cover
+	background-position: 60% 100%
+.logo
+	margin-top: 1.5rem
+	text-decoration: none
+	display: block
+	z-index: 1000
+	&__name
+		font-family: GeorgiaRegular
+		font-size: 2rem
+		color: #f1cdb3
+		line-height: 2.5rem
+	&__text
+		color: #fff
+		font-family: ArialRegular
+		font-size: 0.8rem
+		letter-spacing: 1px
+.btn
+	background-color: #f1cdb3
+	color: #292929
+	font-family: GeorgiaRegular
+	font-size: 1.1rem
+	border-radius: 10rem
+	padding: .9rem 2.5rem
+	transition: all .5s
+	display: inline-block
+	line-height: 1.1rem
+	letter-spacing: 1px
+	&:hover
+		text-decoration: none
+		color: #292929
+		background-color: #f6ddc3
+.main-text
+	width: 450px
+	&__title
+		padding-top: 15.3rem
+		font-family: GeorgiaRegular
+		font-weight: 200
+		font-size: 2.8rem
+		color: #fff
+		margin: 0
+		line-height: 3.5rem
+	&__small
+		color: #cdcdcd
+		font-family: ArialRegular
+		font-size: .9rem
+		margin-top: 2.8rem
+		margin-bottom: 2.8rem
+	&__btn:hover
+		color: #fff
+		background-color: transparent
+		outline: 2px solid #f6ddc3
+.main-nav
+	text-align: right
+	margin-top: 3rem
+	transition: all .5s
+	&__items
+		font-size: 0
+	&__item
+		display: inline-block
+		padding-left: 1.5rem
+		font-size: .9rem
+		&:first-child
+			padding-left: 0
+	&__link
+		display: block
+		color: #fff
+		font-family: ArialRegular
+		text-decoration: none
+		position: relative
+		&:after
+			content: ''
+			position: absolute
+			top: 100%
+			left: 50%
+			width: 0
+			height: 2px
+			background-color: #f1cdb3
+			transition: opacity 0.3s, transform 0.3s
+			transform: translateY(10px)
+			transition: width 0.35s
+			transform: translateX(-50%)
+		&:hover:after
+			width: 100%
+		&:hover
+			color: #fff
+
+
+.head
+	position: fixed
+	z-index: 100
+	width: 100%
+	top: 0
+	left: 0
+	min-height: 110px
+
+.head.sticky 
+	.logo
+		margin-top: 1.5rem
+	.bt-menu-mobile
+		margin-top: 2.2rem
+.sticky
+	position: fixed
+	width: 100%
+	background-image: url(../img/wrap.jpg)
+	background-size: cover
+	background-position: center
+	z-index: 100
+	min-height: 105px
+
+section
+	padding-bottom: 2.5rem
+	padding-top: 2.5rem
+	background-color: #f6f6f6
+section:nth-child(even)
+	background-color: #fafafa
+.sect-img
+	text-align: center
+	padding-top: 2.5rem
+	padding-bottom: 2.5rem
+	img
+		max-width: 100%
+.sect-text
+	margin-top: 3.75rem
+	&__title
+		margin: 0
+		margin-top: 1.8rem
+		color: #545454
+		font-family: GeorgiaRegular
+		font-weight: 200
+		font-size: 2rem
+		line-height: 2.6rem
+		letter-spacing: 3px
+	&__text
+		margin: 1.8rem 0
+		line-height: 1.5rem
+		color: #4c4c4c
+		font-family: ArialRegular
+		font-size: 0.9rem
+		width: 85%
+.sect-name
+	margin: 0 auto
+	margin-top: 2.1rem
+	margin-bottom: 3.1rem
+	&__title
+		margin: 0
+		color: #545454
+		font-family: GeorgiaRegular
+		font-weight: 200
+		font-size: 2rem
+		line-height: 2.8rem
+		text-align: center
+		padding: 0 .9rem
+		letter-spacing: 3px
+
+
+
+.slid-content
+	text-align: center
+	padding-bottom: .6rem
+	.slid-item
+		background-color: #fafafa
+		margin: 1.1rem
+		padding: 2.1rem 2.3rem
+		border-radius: .6rem
+		transition: all .5s
+		cursor: pointer
+		text-decoration: none
+		display: block
+		&:hover
+			box-shadow: 0px 0px 1rem -0.7rem rgba(0,0,0,.4)
+			transform: scale(1.1)
+		&:hover .btn-pets
+			background-color: #f1cdb3
+		button
+			outline: none
+	img
+		max-width: 100%
+		height: 210px
+		display: inline-block
+		object-fit: contain
+	.name-pets
+		display: block
+		font-family: GeorgiaRegular
+		font-size: 1.3rem
+		color: #545454
+		margin: 1.8rem 0 1.25rem
+	.btn-pets
+		display: block
+		background-color: #fff
+		border: 2px solid #f1cdb3
+		max-width: 100%
+		margin: 0 auto
+		color: #292929
+		letter-spacing: 1px
+		transition: all .5s
+		cursor: pointer
+		padding: .6rem 2.2rem
+
+.slick-prev
+	border: 2px solid #f1cdb3
+	border-radius: 50%
+	width: 50px
+	height: 50px
+	transition: all .5s
+	&::before
+		content: url(../img/arr-left.png)
+		opacity: 1
+		font-size: 0.6rem
+	&:hover
+		background-color: #f1cdb3
+		
+.slick-next
+	border: 2px solid #f1cdb3
+	border-radius: 50%
+	width: 50px
+	height: 50px
+	transition: all .5s
+	&::before
+		content: url(../img/arr-right.png)
+		opacity: 1
+		font-size: .6rem
+	&:hover
+		background-color: #f1cdb3
+
+button.mfp-arrow
+	outline: none
+
+.slick-list
+	margin: 0 4.6rem
+
+.section-btn
+	text-align: center
+	margin-top: 3.4rem
+	margin-bottom: 1.5rem
+	.btn
+		border: 2px solid #f1cdb3
+		display: inline-block
+		letter-spacing: 1px
+		&:hover
+			background-color: #fff
+
+.s3-items-container
+	text-align: center
+	.s3-item-wrap
+		display: inline-block
+		padding: 0 .9rem
+		width: 220px
+		vertical-align: top
+		opacity: 1
+		transition: all .5s
+		transform: translateY(-25px)
+		&.on
+			opacity: 1
+			transform: translateY(0px)
+	.s3-item
+		margin-bottom: 3.75rem
+		margin-top: 1.8rem
+	.s3-svg
+		text-align: center
+		svg
+			width: 55px
+			height: 55px
+			display: block
+			margin: 0 auto
+	.s3-item-text
+		color: #545454
+		font-family: GeorgiaRegular
+		font-size: 1.2rem
+		margin: 1.25rem 0
+		display: block
+		letter-spacing: 1px
+
+.section-donat
+	padding-bottom: 4.3rem
+	p
+		margin-top: 1.5rem
+		margin-bottom: .6rem
+		letter-spacing: 1px
+		color: #545454
+		font-family: GeorgiaRegular
+	.sect-img
+		margin-bottom: .6rem
+		padding-bottom: 0
+	.sect-text
+		margin-top: 0
+.card-wrap
+	background-color: #f1cdb3
+	display: inline-block
+	padding: .6rem .75rem
+	border-radius: .6rem
+.card
+	display: flex
+	align-items: center
+	&__svg
+		margin-right: .8rem
+		svg
+			width: 35px
+			height: 30px
+			vertical-align: text-top
+	&__numbers
+		color: #292929
+		font-family: TimesNewRomanRegular
+		font-size: 1.2rem
+		letter-spacing: 1px
+.card-info
+	color: #b2b2b2
+	font-family: ArialItalic
+	font-size: 0.8rem
+	margin-top: 1.8rem
+	line-height: 1.1rem
+	width: 70%
+
+footer
+	padding-top: 4.3rem
+	background-image: url(../img/main.jpg)
+	background-size: cover
+	background-position: center
+	min-height: 372px
+.footer-title
+	color: #fff
+	font-family: GeorgiaRegular
+	font-size: 2.2rem
+	letter-spacing: 2px
+	line-height: 2.8rem
+.footer-img
+	img
+		max-width: 100%
+.footer-content
+	padding-top: 1.8rem
+	padding-bottom: 4.3rem
+	&__item
+		padding-bottom: 1.8rem
+		display: flex
+		align-items: center
+		text-decoration: none
+		color: #f1cdb3
+		font-family: TimesNewRomanRegular
+		font-size: 1.2rem
+		&:last-child
+			padding-bottom: 0
+	&__svg
+		margin-right: .8rem
+		svg
+			width: 45px
+			height: 40px
+			display: block
+			margin: 0 auto
+	&__text
+		color: #f1cdb3
+		font-family: TimesNewRomanRegular
+		font-size: 1.2rem
+		line-height: 1.5rem
+		letter-spacing: 1px
+.footer-content-two
+	.footer-content__item
+		padding-bottom: 1.25rem
+
+.portfolio_item
+	display: none
+	padding: 0
+	img
+		width: 100%
+	.port_item_cont
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		background-color: rgba(0,0,0,.8)
+		text-align: center
+		padding-top: 15%
+		opacity: 0
+		transition: all .5s
+	&:hover .port_item_cont
+		opacity: 1
+		padding-top: 20%
+	h3
+		color: #fff
+		margin-bottom: 0
+	a
+		background-color: transparent
+		border: 1px solid #fff
+		padding: 2px .6rem
+		display: inline-block
+
+.slid_descr
+	background-color: #fafafa
+	max-width: 970px
+	margin: auto
+	border-radius: .6rem
+	padding: 1.8rem
+	max-height: 400px
+	overflow: hidden
+	.slid-wrap
+		display: flex
+		align-items: center
+	.slid-modal-img
+		width: 50%
+		text-align: center
+		margin-right: 1.8rem
+		img
+			max-width: 100%
+			max-height: 320px
+	.slid-modal-text
+		width: 50%
+		.slid-modal-name-pets
+			color: #545454
+			font-family: GeorgiaRegular
+			font-size: 2.2rem
+		.slid-modal-breed
+			color: #545454
+			font-family: GeorgiaRegular
+			font-size: 1.2rem
+		p
+			color: #4c4c4c
+			font-family: ArialRegular
+			font-size: 0.9rem
+			padding-top: 1.5rem
+		.slid-modal-feature-pets
+			ul,
+			li
+				padding: 0
+				margin: 0
+				list-style-type: none
+			li
+				color: #545454
+				font-family: ArialRegular
+				font-size: 0.9rem
+				span
+					font-family: GeorgiaRegular
+					font-size: 1.1rem
+					&::before
+						color: #f1cdb3
+						content: "•"
+						padding-right: .6rem
+button.mfp-close
+	border: 2px solid #f1cdb3
+	border-radius: 50% 
+	padding: 1.25rem
+	outline: none
+	svg
+		width: 15px
+		height: 15px
+		position: relative
+		top: -23px
+		right: 7px
+
+.hidden
+	display: none
+
+.modal-box-content
+	position: relative
+
+
+// Mobile Nav Start
+
+.menu-mobile 
+	display: none
+	.bt-menu-mobile
+		border: none
+		background: none
+		width: 40px 
+		float: right
+		margin: 3.1rem 15% 0 0
+		position: relative
+		height: 25px
+		cursor: pointer
+		outline: none
+		span
+			background-color: #ffffff
+			display: block
+			height: 2px
+			position: absolute
+			width: 100%
+			&.top
+				top: 0
+			&.middle
+				top: 50%
+				margin-top: -2px
+			&.bottom
+				top: 100%
+				margin-top: -3px
+	.wrapper > a
+		font-size: 1.2rem
+		padding: 1.75rem 0 0 1.8rem
+		float: left
+		color: #ffffff
+		text-decoration: none
+	.block-menu-mobile
+		position: absolute
+		width: 100% 
+		height: 100%
+		background-color: transparent
+
+.wrapper-menu-mobile
+	position: fixed
+	width: 100%
+	height: 100%
+	top: 0
+	left: 100%
+	.wrapper
+		position: absolute
+		height: 100%
+		width: 215px
+		right: -100%
+		z-index: 10
+		background: rgba(0,0,0,.9)
+	.main-nav
+  		display: block
+	.main-nav__link
+		&:hover:after
+			width: 0
+	ul
+		padding: 0 1.25rem
+		position: relative
+		height: 100%
+		overflow-y: scroll
+		li
+			padding: .6rem 0
+			border-top: 1px solid #f1cdb3
+			display: block
+			&.first
+  				border: none
+			a
+				margin-left: .6rem
+				display: block
+				font-family: ArialRegular, sans-serif
+				font-size: 1rem
+				text-decoration: none
+				color: #ffffff
+			button
+				background: none
+				border: none 
+				float: right
+			span
+				float: left
+				margin: .3rem 0 0 .6rem
+				display: block
+				font-family: ArialRegular,sans-serif
+				font-size: 1.2rem
+				line-height: 1.3rem
+				text-transform: uppercase
+				text-decoration: none
+	.bt-fechar-menu
+		color: #ffffff
+		cursor: pointer
+		background-color: transparent
+		border: transparent
+		float: right
+		font-size: 1.5rem
+		margin: .3rem .3rem 0 0
+		outline: none
+
+// Mobile Nav End
+
+
+
+#pets
+	.main-nav__link_active
+		&:after
+			width: 100%
+	.head
+		background-color: #fafafa
+	.sticky
+		background-image: none
+		background-color: #fafafa
+	.logo
+		&__name
+			color: #545454
+		&__text
+			color: #292929
+	.main-nav
+		&__link
+			color: #545454
+			&:hover
+				color: #545454
+	.gallery-module
+		ul
+			text-align: center
+		li
+			display: inline-block
+	.section-slider
+		background-color: #f6f6f6
+		margin-top: 6.25rem
+	.menu-mobile 
+		.bt-menu-mobile
+			span
+				background-color: #000000
+	.slid-content
+		display: inline-block
+		margin: 0 auto
+		.slid-item
+			margin: .7rem
+			max-width: 250px
+	.section-list
+		text-align: center
+		margin-top: 4rem
+		margin-bottom: 1.5rem
+		&__items
+			display: flex
+			justify-content: center
+			align-items: center
+			flex-direction: row
+		&__item
+			margin-right: 1rem
+			&:last-child
+				margin-right: 0
+		&__link
+			color: #000
+			text-decoration: none
+			font-size: 1.1rem
+			display: flex
+			justify-content: center
+			align-items: center
+			border-radius: 50%
+			border: 2px solid #f1cdb3
+			background: transparent
+			padding: 1.4rem
+			max-width: 10px
+			max-height: 10px
+			&:hover
+				background-color: #f1cdb3
+			&_active
+				background-color: #f1cdb3
+			&_points
+				color: #f1cdb3
+				vertical-align: middle
+				border: none
+				display: inline
+				padding: 0
+				font-size: 3rem
+				&:hover
+					background-color: transparent
+					cursor: default
+
+.main-nav__link.active
+	position: relative
+	&:after
+		content: ''
+		position: absolute
+		top: 100%
+		left: 50%
+		width: 100%
+		height: 2px
+		background-color: #f1cdb3
+		transition: opacity 0.3s, transform 0.3s
+		transform: translateY(10px)
+		transition: width 0.35s
+		transform: translateX(-50%)
+
+@import "media" // Always at the end
