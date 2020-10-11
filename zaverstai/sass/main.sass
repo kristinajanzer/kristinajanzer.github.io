@@ -1,0 +1,482 @@
+@import "vars"
+@import "fonts"
+
+*
+	padding: 0
+	margin: 0
+
+*,
+*:before,
+*:after
+	-moz-box-sizing: border-box
+	-webkit-box-sizing: border-box
+	box-sizing: border-box
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	color: $text
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		// &:focus:required:invalid
+		// 	border-color: red
+		// &:required:valid
+		// 	border-color: green
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+	&.img-width
+		width: 100%
+
+.text-center
+	text-align: center
+
+b, strong
+	font-weight: bold
+
+a
+	text-decoration: none
+	&:hover
+		text-decoration: none
+
+p, ul, li
+	padding: 0
+	margin: 0
+
+li
+	list-style-type: none
+
+h1, h2, h3, h4, h5, h6
+	padding: 0
+	margin: 0
+
+
+.container
+	max-width: 1140px
+	margin: 0 auto
+	padding: 0 15px
+	width: 100%
+
+
+.header
+	background-image: url(../img/bg1.jpg)
+	background-size: cover
+	background-position: center
+	background-repeat: no-repeat
+	width: 100%
+	height: auto
+	min-height: 580px
+	&__top
+		display: flex
+		justify-content: space-between
+		align-items: center
+	&__nav
+		ul
+			li
+				margin-left: 80px
+.navigation
+	ul
+		display: flex
+		align-items: center
+		li
+			a
+				color: $text
+				font-family: 'OpenSans', sans-serif
+				font-size: 18px
+				position: relative
+				&:after
+					content: ''
+					position: absolute
+					left: 0
+					bottom: 0
+					width: 0
+					height: 2px
+					transition: all .5s ease
+				&:hover:after
+					width: 100%
+					background-color: #cbc5bd
+					bottom: 0
+
+
+section
+	margin-top: 85px
+
+.title
+	color: $text
+	font-size: 36px
+	font-family: 'SpectralSC', sans-serif
+	text-align: center
+	font-weight: bold
+	margin-bottom: 50px
+
+
+.article
+	display: flex
+	justify-content: space-between
+	align-items: flex-start
+	&__item
+		display: flex
+		flex-direction: column
+		flex-basis: 32.5%
+		max-width: 32.5%
+	&__img
+		width: 100%
+		border-radius: 10px
+	&__title
+		font-family: 'SpectralSC', sans-serif
+		font-weight: bold
+		font-size: 17px
+		margin-top: 27px
+		color: $text
+	&__text
+		color: $text
+		line-height: 26px
+		margin-top: 8px
+	&__tags
+		display: flex
+		justify-content: space-between
+		align-items: center
+		color: rgba(46, 47, 34, 0.7)
+		margin-top: 12px
+
+.articles
+	&__top
+		display: flex
+		justify-content: space-between
+		align-items: center
+		margin-bottom: 50px
+	&__title
+		text-align: left
+		margin-bottom: 0
+	&__items
+		.article
+			margin: 60px 0 0
+			&__item
+				flex-basis: 49%
+				max-width: 49%
+				max-height: 550px
+			&__image
+				background-size: cover
+				height: 552px
+				padding: 0 80px 60px
+				display: flex
+				flex-direction: column
+				justify-content: flex-end
+				border-radius: 10px
+			&__image_1
+				background-image: url(../img/articles/article4.jpg)
+			&__image_2
+				background-image: url(../img/articles/article5.jpg)
+			&__title
+				color: #ffffff
+			&__text
+				color: #ffffff
+			&__tags
+				color: rgba(255, 255, 255, 0.7)
+	&__filter
+		background: #D7D1C9
+		padding: 12px 60px 12px 20px
+		font-size: 16px
+		-webkit-appearance: none
+		-moz-appearance: none
+		appearance: none
+		outline: none
+		background-image: url(../img/arrow.png)
+		background-position: 85% center
+		background-repeat: no-repeat
+		border-radius: 10px
+		border: none
+		font-size: 16px
+		font-family: 'OpenSans', sans-serif
+		color: $text
+		transition: all .5s ease
+		cursor: pointer
+
+
+
+.btn
+	background: transparent
+	border: 1px solid #202117
+	padding: 12px 58px
+	border-radius: 10px
+	margin: 0 auto
+	cursor: pointer
+	display: block
+	text-transform: uppercase
+	transition: all .5s ease
+	margin-top: 100px
+	&:hover
+		transform: scale(1.1)
+		-ms-backface-visibility: hidden
+
+
+
+.about
+	&__wrap
+		display: flex
+	&__item
+		display: flex
+		flex-direction: column
+	&__text
+		flex: 1 1 auto
+		p
+			margin-left: 40px
+			margin-top: 25px
+	&__span
+		color: $text
+		font-style: italic
+		font-size: 30px
+		line-height: 40px
+		margin-left: 20px
+		padding: 20px
+		border-left: 3px solid #D7D1C9
+		margin-top: 70px
+
+
+.portfolio
+	&__articles
+		display: flex
+		justify-content: space-between
+	&__article
+		background-size: cover
+		min-height: 525px
+		border-radius: 10px
+		text-align: center
+		flex-basis: 32.5%
+		max-width: 32.5%
+		max-height: 550px
+		display: flex
+		justify-content: flex-start
+		align-items: center
+		flex-direction: column
+		padding: 120px 20px 40px
+		&_name
+			font-family: 'SpectralSC', sans-serif
+			font-weight: bold
+			font-size: 20px
+			color: $text
+		&_title
+			font-family: 'SpectralSC', sans-serif
+			font-weight: bold
+			font-size: 18px
+			color: $text
+			margin-top: 45px
+		&_text
+			font-size: 16px
+			color: $text
+			margin-top: 17px
+	&__article:nth-child(1)
+		background-image: url(../img/portfolio1.jpg)
+	&__article:nth-child(2)
+		background-image: url(../img/portfolio2.jpg)
+	&__article:nth-child(3)
+		background-image: url(../img/portfolio3.jpg)
+	&__article:nth-child(2) .portfolio__article_name,
+	&__article:nth-child(2) .portfolio__article_title,
+	&__article:nth-child(2) .portfolio__article_text
+		color: #fff
+
+
+
+.form
+	background-image: url(../img/write.jpg)
+	background-size: cover
+	display: flex
+	align-items: center
+	justify-content: center
+	padding: 53px 80px 62px
+	max-width: 996px
+	margin: 0 auto
+	border-radius: 10px
+	&__items
+		display: flex
+		justify-content: space-between
+		align-items: center
+		flex-wrap: wrap
+		width: 100%
+	&__item
+		display: flex
+		flex-direction: column
+		flex-wrap: wrap
+		width: 100%
+		flex-basis: 49%
+		max-width: 49%
+	&__label
+		font-family: 'SpectralSC', sans-serif
+		font-weight: bold
+		font-size: 18px
+		margin-bottom: 12px
+	&__input
+		padding: 20px
+		background: rgba(255, 255, 255, 0.4)
+		border: 1px solid #202117
+		border-radius: 10px
+	&__textarea
+		display: flex
+		flex-direction: column
+		width: 100%
+		margin-top: 20px
+		textarea
+			background: rgba(255, 255, 255, 0.4)
+			border: 1px solid #202117
+			border-radius: 10px
+			padding: 20px
+			font-size: 16px
+			font-family: 'OpenSans', sans-serif
+	.btn
+		margin-top: 20px
+
+
+.hidden
+	display: none
+
+
+.footer
+	margin-top: 80px
+	background-color: #D7D1C9
+	&__nav
+		padding: 65px 0 90px
+		ul
+			display: flex
+			justify-content: center
+			align-items: center
+			li:not(:last-child)
+				padding-right: 120px
+
+
+
+#article
+	.header
+		background-image: url(../img/bg2.jpg)
+	.motivation
+		&__title
+			text-align: left
+			margin-bottom: 6px
+		&__tags
+			display: flex
+			justify-content: flex-start
+			color: rgba(46, 47, 34, 0.7)
+		&__tag
+			margin-right: 18px
+		&__text
+			p
+				margin-top: 40px
+				line-height: 26px
+		&__image
+			margin-top: 40px
+			img
+				width: 100%
+			figcaption
+				margin-top: 10px
+				font-size: 14px
+		&__icons
+			margin-top: 40px
+			display: flex
+			justify-content: space-between
+			align-items: center
+		&__like
+			cursor: pointer
+		.icon
+			width: 50px
+			height: 50px
+			background-color: transparent
+			background-repeat: no-repeat
+			border: none
+			cursor: pointer
+			outline: none
+		.like
+			background-image: url(../img/icons/like.svg)
+			display: flex
+			align-items: flex-end
+			&__number
+				font-size: 24px
+				margin-left: 65px
+				margin-top: 10px
+		.like.added
+			background-image: url(../img/icons/like-added.svg)
+		&__links
+			.icon:not(:last-child)
+				margin-right: 32px
+		&__link-back
+			display: flex
+			justify-content: flex-start
+			align-items: center
+			margin-top: 37px
+			a
+				font-weight: bold
+				font-size: 36px
+				color: $text
+			img
+				margin-left: 26px
+				margin-top: 7px
+				
+
+.comments
+	&__list
+		background: #ECE1E1
+		border-radius: 10px
+		max-width: 793px
+		padding: 44px 101px
+		li:not(:last-child)
+			margin-bottom: 40px
+	&__person
+		display: flex
+		justify-content: flex-start
+		align-items: center
+		img
+			margin-right: 13px
+	&__name
+		font-weight: bold
+	&__comment
+		margin-top: 14px
+
+.comment
+	padding-left: 81px
+	max-width: 793px
+	&__title
+		font-weight: bold
+		font-size: 24px
+		margin: 77px 0 70px
+	&__wrap
+		display: flex
+		justify-content: space-between
+		align-items: flex-end
+	&__inputs
+		display: flex
+		flex-direction: column
+	input
+		margin-bottom: 35px
+		border: none
+		border-bottom: 1px solid $text
+		padding-bottom: 15px
+	textarea
+		width: 406px
+		height: 208px
+		border: 1px solid $text
+		border-radius: 10px
+		padding: 18px 20px
+		box-sizing: border-box
+		font-size: 16px
+		font-family: 'OpenSans', sans-serif
+	.btn
+		margin-top: 18px
+		padding: 12px 70px
+
+.warning
+	color: red
+
+

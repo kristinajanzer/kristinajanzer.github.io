@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title>Zaverstai</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- Template Basic Images Start -->
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="icon" href="img/favicon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+	<!-- Template Basic Images End -->
+
+	<!-- Custom Browsers Color Start -->
+	<meta name="theme-color" content="#000">
+	<!-- Custom Browsers Color End -->
+
+	<link rel="stylesheet" href="css/main.min.css">
+
+</head>
+
+<body id="home">
+
+	<header class="header">
+		<div class="container">
+			<div class="header__top">
+				<a href="index.html" class="header__logo">
+					<img src="img/logo.png" alt="Logo">
+				</a>
+				<nav class="header__nav navigation">
+					<ul>
+						<li><a href="#articles">Статьи</a></li>
+						<li><a href="#about">Обо мне</a></li>
+						<li><a href="#portfolio">Портфолио</a></li>
+						<li><a href="#write">Написать мне</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+
+	<section class="articles">
+		<div class="container">
+			<div class="articles__top">
+				<h2 class="articles__title title" id="articles">Все статьи</h2>
+				<select class="articles__filter" name="news-filter">
+					<option value="путешествия">путешествия</option>
+					<option value="город">город</option>
+					<option value="книги">книги</option>
+					<option value="фотографии">фотографии</option>
+					<option value="рецепты">рецепты</option>
+					<option value="all" selected>все статьи</option>
+				  </select>
+			</div>
+			<div class="article">
+				<article class="article__item" data-category="путешествия">
+					<a href="article.html">
+						<img class="article__img" src="img/articles/article1.jpg" alt="Article">
+						<div class="article__title">Путешествие в Берлин в августе</div>
+						<div class="article__text">Летний месяц я провела в столице Германии вместе с друзьями. И вот как это было!</div>
+						<div class="article__tags">
+							<div class="article__tag">Теги: путешествия</div>
+							<div class="article__date">29.09.2020</div>
+						</div>
+					</a>
+				</article>
+				<article class="article__item" data-category="город">
+					<a href="article.html">
+						<img class="article__img" src="img/articles/article2.jpg" alt="Article">
+						<div class="article__title">Где выпить колдбрю в Москве</div>
+						<div class="article__text">Собрала для вас список любимых кофеен,
+							где подают лучший летний напиток.</div>
+						<div class="article__tags">
+							<div class="article__tag">Теги: город</div>
+							<div class="article__date">24.07.2020</div>
+						</div>
+					</a>
+				</article>
+				<article class="article__item" data-category="книги">
+					<a href="article.html">
+						<img class="article__img" src="img/articles/article3.jpg" alt="Article">
+						<div class="article__title">Прочитано: книжные рекомендации</div>
+						<div class="article__text">Рассказываю о прочитанных за последнее время книгах: фавориты и провалы.</div>
+						<div class="article__tags">
+							<div class="article__tag">Теги: книги</div>
+							<div class="article__date">15.07.2020</div>
+						</div>
+					</a>
+				</article>
+			</div>
+			<div class="articles__items">
+				<div class="article">
+					<article class="article__item" data-category="фотографии">
+						<a href="article.html">
+							<div class="article__image article__image_1">
+								<div class="article__title">Снимки на плёнку</div>
+								<div class="article__text">Поделилась с вами весенними фотографиями, 
+									и секретами удачных снимков.</div>
+								<div class="article__tags">
+									<div class="article__tag">Теги: фотографии</div>
+									<div class="article__date">29.06.2020</div>
+								</div>
+							</div>
+						</a>
+					</article>
+					<article class="article__item" data-category="рецепты">
+						<a href="article.html">
+							<div class="article__image article__image_2">
+								<div class="article__title">Домашний чизкейк</div>
+								<div class="article__text">Что может быть лучше чизкейка с сезонными
+									ягодами? Только домашний чизкейк!</div>
+								<div class="article__tags">
+									<div class="article__tag">Теги: рецепты</div>
+									<div class="article__date">24.06.2020</div>
+								</div>
+							</div>
+						</a>
+					</article>
+				</div>
+			</div>
+			<button class="btn">Показать ещё</button>
+		</div>
+	</section>
+
+	<section class="about">
+		<div class="container">
+			<h2 class="about__title title" id="about">Обо мне</h2>
+			<div class="about__wrap">
+				<img src="img/about.jpg" alt="About">
+				<div class="about__item">
+					<div class="about__text">
+						<p>Всем привет! Меня зовут Аня, и это мой личный блог.
+							Здесь ты найдёшь рассказы о моих путешествиях, снимки
+							на плёнку, рецепты, обзоры на книги. В общем, тексты о том,
+							что мне инетресно.</p>
+						<p>Я работаю копирайтером, поэтому мой блоге — это ещё и моё
+							портфолио. Ниже размещены несколько моих лучших
+							рабочих текстов. Буду рада новым сотрудничествам!</p>
+						<p>Если вы хотите написать мне — это можно сделать в соцсетях
+							или через форму. Всегда приятно услышать обратную связь
+							от читателей и познакомиться поближе.</p>
+						<p>Приятного чтения!</p>
+					</div>
+					<span class="about__span">Я верю, что каждый раз пробуя новое,
+						выходящее за зону моего комфорта,
+						я действительно узнаю настояющую
+						себя. </span>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="portfolio">
+		<div class="container">
+			<h2 class="portfolio__title title" id="portfolio">Портфолио</h2>
+			<div class="portfolio__articles">
+				<article class="portfolio__article">
+					<div class="portfolio__article_name">Блог HTML Academy</div>
+					<div class="portfolio__article_title">«Как учиться продуктивно»</div>
+					<div class="portfolio__article_text">
+						Про основные методы обучения, которые помогут быстро и надолго запомнить информацию.
+					</div>
+				</article>
+				<article class="portfolio__article">
+					<div class="portfolio__article_name">Журнал «LNK»</div>
+					<div class="portfolio__article_title">«Зачем поцели нужны человеку? И какие они бывают»</div>
+					<div class="portfolio__article_text">
+						Поцелуи — повсеместная ежедневная практика. Но зачем люди целуются? Какие смысли вкладывают в этот ритуал? И где корни этой практики?
+					</div>
+				</article>
+				<article class="portfolio__article">
+					<div class="portfolio__article_name">Журнал «Т — Л»</div>
+					<div class="portfolio__article_title">«Советы по эффективной
+						удалённой работе»</div>
+					<div class="portfolio__article_text">
+						Поделилась лайфхаками, которые помогают мне работать продуктивно из дома. 
+					</div>
+				</article>
+			</div>
+		</div>
+		<button class="btn">Показать ещё</button>
+	</section>
+
+	<section class="write">
+		<div class="container">
+			<h2 class="write__title title" id="write">Написать мне</h2>
+			<form class="write__form form">
+				<div class="form__items">
+					<div class="form__item">
+						<label for="form__input" class="form__label">Ваше имя</label>
+						<input type="text" class="form__input" required>
+					</div>
+					<div class="form__item">
+						<label for="form__input" class="form__label">Email</label>
+						<input type="text" class="form__input" required>
+					</div>
+					<div class="form__textarea">
+						<label for="form__input" class="form__label">Сообщение</label>
+						<textarea class="form__text" cols="30" rows="10" min="10" max="200" placeholder="Напишите здесь ваше сообщение."></textarea>
+						<span class="form__counter hidden">Использовано <output class="write-counter" for="form__text">0</output>/150 символов</span>
+					</div>
+					<button class="write__btn btn">Отправить</button>
+				</div>
+			</form>
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="container">
+			<nav class="footer__nav navigation">
+				<ul>
+					<li><a href="https://vk.com">ВК</a></li>
+					<li><a href="https://telegram.org/">Телеграм</a></li>
+					<li><a href="https://www.instagram.com/">Инстаграм</a></li>
+					<li><a href="https://twitter.com/">Твиттер</a></li>
+				</ul>
+			</nav>
+		</div>
+	</footer>
+
+	<script>
+
+		let textareaForm = document.querySelector('.form__text');
+		let btnForm = document.querySelector('.write__btn');
+		let counterForm = document.querySelector('.write-counter');
+
+		textareaForm.oninput = function () {
+			counterForm.textContent = textareaForm.value.length; 
+			if (textareaForm.value.length <= 10 || textareaForm.value.length >= 150) {
+				textareaForm.classList.add('warning');
+				btnForm.disabled = true;
+			} else {
+				textareaForm.classList.remove('warning');
+				btnForm.disabled = false;
+			}
+		};
+
+
+		let articles = document.querySelectorAll('.article__item');
+		let filter = document.querySelector('.articles__filter');
+
+		filter.onchange = function() {
+			for (let article of articles) {
+				if (article.dataset.category !== filter.value && filter.value !== 'all') {
+					article.classList.add('hidden');
+				} else {
+					article.classList.remove('hidden');
+				}
+			}
+		}
+
+	</script>
+	<script src="js/scripts.min.js"></script>
+
+</body>
+
+</html>
